@@ -1,0 +1,4 @@
+#Tue Apr 10 16:14:39 CEST 2018
+base.0=/home/rkajatin/Android/Projects/RepeatingAlarm/Application/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex
