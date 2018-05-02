@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="bt_translate">Search</string>
+    <string name="hint_translate">Enter a word, e.g. \'cab\'</string>
+    <string name="content_desc_search_button">Search button to initiate word lookup from edittext</string>
+    <string name="title_activity_bottom_nav">BottomNav</string>
+    <string name="title_dictionary">Dictionary</string>
+    <string name="title_thesaurus">Thesaurus</string>
+    <string name="title_translate">Translate</string>
+
+    <string name="cardview_transition_name">cardview_transition</string>
+    <string name="tv_word_transition_name">tv_word_transition</string>
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.AppTheme.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_secondary</item>
+        <item name="android:navigationBarColor">@color/color_primary_dark</item>
+        <item name="android:statusBarColor">@color/color_primary_dark</item>
+        <item name="android:textColorPrimary">@color/color_primary_text</item>
+        <item name="android:textColorSecondary">@color/color_secondary_text</item>
+        <item name="android:colorControlNormal">@color/grey_400</item>
+        <item name="android:colorControlActivated">@color/grey_400</item>
+        <item name="android:colorControlHighlight">@color/grey_400</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="DetailedViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_secondary</item>
+        <item name="android:navigationBarColor">@color/color_primary_dark</item>
+        <item name="android:statusBarColor">@color/color_primary_dark</item>
+        <item name="android:textColorPrimary">@color/color_primary_text</item>
+        <item name="android:textColorSecondary">@color/color_secondary_text</item>
+        <item name="android:colorControlNormal">@color/grey_400</item>
+        <item name="android:colorControlActivated">@color/grey_400</item>
+        <item name="android:colorControlHighlight">@color/grey_400</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/card_enter_all</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/card_enter_shared</item>
+    </style>
+
+    <style name="Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

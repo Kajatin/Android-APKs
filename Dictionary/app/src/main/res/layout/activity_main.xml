@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_primary"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/rv_results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_word_to_lookup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primary_light_text"
+        android:textColorHint="@color/hint_light_text"
+        android:hint="@string/hint_translate"
+        android:inputType="text"
+        android:paddingEnd="40dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bt_lookup"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/content_desc_search_button"
+        android:src="@drawable/ic_search_24dp"
+        android:visibility="visible"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_word_to_lookup"
+        app:layout_constraintEnd_toEndOf="@+id/et_word_to_lookup"
+        app:layout_constraintTop_toTopOf="@+id/et_word_to_lookup" />
+
+    <ProgressBar
+        android:id="@+id/pb_lookup"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_word_to_lookup"
+        app:layout_constraintEnd_toEndOf="@+id/et_word_to_lookup"
+        app:layout_constraintTop_toTopOf="@+id/et_word_to_lookup" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:id="@+id/navigation"
+        app:menu="@menu/navigation"
+        android:background="@color/color_primary"
+        app:itemIconTint="@color/navigation_bar_colorstatelist"
+        app:itemTextColor="@color/navigation_bar_colorstatelist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_results"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_word_to_lookup" />
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_results">
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
