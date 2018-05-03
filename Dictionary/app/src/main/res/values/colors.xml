@@ -18,7 +18,7 @@
     <color name="grey_200_op150">#96eeeeee</color>
 
     <color name="primary_dark_text">#DE000000</color>
-    <color name="secondary_dark_text">#8A000000</color>
+    <color name="secondary_dark_text">#8a000000</color>
     <color name="hint_dark_text">#61000000</color>
 
     <color name="primary_light_text">#FFFFFF</color>

@@ -30,4 +30,5 @@ public final class Strings {
     public static final String mFieldSynonyms        = "synonyms";
     public static final String mFieldAntonyms        = "antonyms";
     public static final String mFieldTranslations    = "translations";
+    public static final String mFieldPhoneticSpelling= "phoneticSpelling";
 }

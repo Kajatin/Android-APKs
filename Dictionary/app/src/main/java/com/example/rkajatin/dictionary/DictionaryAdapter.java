@@ -68,6 +68,7 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.En
                 holder.tvLexCategory.setText(entry.optString(Strings.mFieldLexicalCategory));
                 holder.tvDefinition.setText(entry.optString(Strings.mFieldDefinitions));
                 holder.tvExample.setText(ex);
+                holder.tvPhonetic.setText(JSONUtils.fetchPhoneticSpelling(entry));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -114,6 +115,7 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.En
         TextView tvLexCategory;
         TextView tvDefinition;
         TextView tvExample;
+        TextView tvPhonetic;
 
         public EntryViewHolder(View v) {
             super(v);
@@ -122,6 +124,7 @@ public class DictionaryAdapter extends RecyclerView.Adapter<DictionaryAdapter.En
             tvLexCategory = (TextView) v.findViewById(R.id.tv_item_lexcategory);
             tvDefinition = (TextView) v.findViewById(R.id.tv_item_definition);
             tvExample = (TextView) v.findViewById(R.id.tv_item_example);
+            tvPhonetic = v.findViewById(R.id.tv_item_phonetic);
         }
     }
 }

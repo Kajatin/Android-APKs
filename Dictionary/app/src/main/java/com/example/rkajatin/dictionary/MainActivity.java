@@ -6,8 +6,10 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -91,6 +93,8 @@ public class MainActivity extends Activity {
         });
 
         rvResults.setLayoutManager(new LinearLayoutManager(this));
+        //rvResults.setLayoutManager(new GridLayoutManager(this, 2));
+        //rvResults.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
         adapter = new DictionaryAdapter(null);
         rvResults.setAdapter(adapter);
     }

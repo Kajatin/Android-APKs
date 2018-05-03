@@ -81,4 +81,16 @@ public class JSONUtils {
 
         return ret;
     }
+
+    public static String fetchPhoneticSpelling(JSONObject from) {
+        String ret = null;
+
+        JSONArray jsonPronunciation = from.optJSONArray(Strings.mFieldPronunciations);
+        if (jsonPronunciation != null) {
+            JSONObject jsonPhoneticSpelling = jsonPronunciation.optJSONObject(0);
+            ret = "/"+jsonPhoneticSpelling.optString(Strings.mFieldPhoneticSpelling)+"/";
+        }
+
+        return ret;
+    }
 }
